@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duolingo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .navbar {
+            font-family: Arial, sans-serif;
+            background-color: #67d76b;
+            border-radius: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .navbar-brand {
+            
+            font-weight: bold;
+            color: #fff;
+        }
+        .nav-link {
+            font-weight: bold;
+            color: #fff;
+        }
+        .side-column {
+            background-color: #f8f9fa;
+            border-radius: 20px;
+            padding: 20px;
+            margin-bottom: 20px;
+            min-height: 710px; 
+        }
+        .mynav {
+
+            font-family: Arial, sans-serif;
+            font-size: large;
+            font-weight: bold;
+            color: #67d76b;
+            margin-bottom: 100px;    
+        }
+        .main-content {
+            padding: 20px;
+        }
+        .carousel-item img {
+            border-radius: 20px;
+        }
+        .carousel-control-prev, .carousel-control-next {
+            background: rgba(103, 215, 107, 0.5);
+            border-radius: 20px;
+        }
+        .carousel-control-prev-icon, .carousel-control-next-icon {
+            background-color: #fff;
+            border-radius: 10px;
+        }
+        .carousel-indicators button {
+            border-radius: 50%;
+        }
+        .accordion-item {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            margin-top: 20px;
+        }
+        .accordion-button {
+            color: #67d76b;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+        
+        footer {
+            background-color: #67d76b;
+            color: white;
+            padding: 20px;
+            border-radius: 20px;
+            margin-top: 20px;
+        }
+        footer h5 {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        footer p {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <img src="https://cdn.jim-nielsen.com/ios/512/duolingo-2019-01-02.png" alt="" width="50px" height="50px">
+            <a class="navbar-brand" href="#">Lingo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="signup.html">Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login (1).html">Log In</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3 mb-4">
+                <div class="side-column">
+                    <ul class="mynav nav nav-pills flex-column mb-auto">
+                        <li class="nav-item mb-1">
+                            <a class="nav-link mynav" href="l1.html">Learn</a>
+                        </li>
+                    </ul>
+                    <ul class="mynav nav nav-pills flex-column mb-auto">
+                        <li class="nav-item mb-1">
+                            <a class="nav-link mynav" href="p1.html">Practice</a>
+                        </li>
+                    </ul>
+                    <ul class="mynav nav nav-pills flex-column mb-auto">
+                        <li class="nav-item mb-1">
+                            <a class="nav-link mynav" href="quiz1.html">Tests</a>
+                        </li>
+                    </ul>
+                    <ul class="mynav nav nav-pills flex-column mb-auto">
+                        <li class="nav-item mb-1">
+                            <a class="nav-link mynav" href="faq.html">FAQs</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <nav class="navbar navbar-expand-lg" style="padding: 5px; ">
+                    <div class="container">
+                        <div class="collapse navbar-collapse" id="navbarNa5v">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item">
+                                    <a class="navbar-brand" style="font-family: josefine;" href="#">
+                                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/1200px-Flag_of_France.svg.png" width="30px" height="20px">French</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="navbar-brand" style="font-family: josefine;" href="#">
+                                        <img src="https://static-00.iconduck.com/assets.00/fire-emoji-1606x2048-z6ituxc1.png" width="30px" height="20px">Streak</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="navbar-brand" style="font-family: josefine;" href="#">
+                                        <img src="https://images.emojiterra.com/google/android-12l/512px/1f48e.png" width="30px" height="20px">Diamond</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="navbar-brand" style="font-family: josefine;" href="#">
+                                        <img src="https://images.emojiterra.com/google/noto-emoji/unicode-15.1/color/1024px/2764.png" width="30px" height="20px">Heart</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <div id="demo" class="carousel slide"  data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                        <button data-bs-target="#demo" data-bs-slide-to="1"></button>
+                        <button data-bs-target="#demo" data-bs-slide-to="2"></button>
+                        <button data-bs-target="#demo" data-bs-slide-to="3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://media.istockphoto.com/id/502641289/photo/hello-hello.jpg?s=612x612&w=0&k=20&c=a6b-fV5WQkx_xUCG-JKUnkHrnf4GDxEepCDKHfW_t7I=" class="d-block w-100" height="650px" width="450px" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.cnet.com/a/img/resize/e35e8194ed30d0a26baf9c028f585818e1ca6e86/hub/2022/05/05/d6fbb617-2e84-411b-acde-17da898cb9d7/duolingo-duo-owl-logo-2022.jpg?auto=webp&fit=crop&height=675&width=1200" class="d-block w-100" alt="..." height="650px" width="450px">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://d31ezp3r8jwmks.cloudfront.net/fypawfxw9by8n3nw8t3cws51e0vy" class="d-block w-100" alt="..." height="650px" width="450px">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://t4.ftcdn.net/jpg/02/38/06/15/360_F_238061587_jE6JT2D1iZDSr71IJIyXuZW4yfzEaL5A.jpg" class="d-block w-100" alt="..." height="650" width="450">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" data-bs-target="#demo" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" data-bs-target="#demo" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+         
+            </div>
+        </div>
+    </div>       
+    <footer>
+                
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h5>About Lingo</h5>
+                    <p>Lingo is a French-learning platform that includes a French-learning website, as well as a digital language-proficiency assessment exam. Lingo provides setions for learning,practicing and test.</p>
+                </div>
+            </div>
+            <div class="accordion" id="footerAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="footerHeadingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#footerCollapseOne" aria-expanded="true" aria-controls="footerCollapseOne">
+                            About
+                        </button>
+                    </h2>
+                    <div id="footerCollapseOne" class="accordion-collapse collapse show" aria-labelledby="footerHeadingOne" data-bs-parent="#footerAccordion">
+                        <div class="accordion-body">
+                            Lingo is a French-learning platform that includes a French-learning website, as well as a digital language-proficiency assessment exam. 
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="footerHeadingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#footerCollapseTwo" aria-expanded="false" aria-controls="footerCollapseTwo">
+                            Contact Us
+                        </button>
+                    </h2>
+                    <div id="footerCollapseTwo" class="accordion-collapse collapse" aria-labelledby="footerHeadingTwo" data-bs-parent="#footerAccordion">
+                        <div class="accordion-body">
+                            You can contact Lingo customer support by sending an email to support@lingo.com or contacting on number +91826622.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="footerHeadingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#footerCollapseThree" aria-expanded="false" aria-controls="footerCollapseThree">
+                            More Info
+                        </button>
+                    </h2>
+                    <div id="footerCollapseThree" class="accordion-collapse collapse" aria-labelledby="footerHeadingThree" data-bs-parent="#footerAccordion">
+                        <div class="accordion-body">
+                            For more information about Duolingo, including company news, updates, and career opportunities, contact the Lingo help center at support@lingo.com.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

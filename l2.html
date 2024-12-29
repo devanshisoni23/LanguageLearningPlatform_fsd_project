@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Verdana, Geneva, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container-header, .container-content {
+            border-radius: 10px;
+            background-color: white;
+            color: #333;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding:20px;
+        }
+        .container-header {
+            background-color: #53b151;
+            color: white;
+            padding: 20px;
+            overflow: hidden;
+        }
+        .container-header img {
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        .chapter-title {
+            text-align: center;
+            margin-bottom: 20px;
+            text-decoration: none;
+        }
+        .chapter-list {
+            padding-left: 20px;
+            list-style: none;
+        }
+        .chapter-list li {
+            margin-bottom: 10px;
+            position: relative;
+        }
+        .chapter-list li::before {
+            content: "\2022"; 
+            color: #53b151; 
+            font-size: 1.5rem; 
+            left: -20px; 
+        }
+        .chapter-item img {
+            float: right;
+            border-radius: 20px;
+            margin-left: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .pagination {
+            justify-content: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container-header">
+            <img src="https://cdn.jim-nielsen.com/ios/512/duolingo-2019-01-02.png" alt="">
+            <h1 class="lingo-title">Chapter 2</h1>
+        </div>
+        <div class="container-content">
+            <h1 class="chapter-title">Chapter 2</h1>
+            <div class="chapter-item">
+                <h4>Basic French Grammar</h4>
+                            <img src="data:image/png;base64,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" alt="Grammar Image" height="350px" width="450px">
+
+                    <ul >
+                        <li>Subject Pronouns:
+                            <ul class="chapter-list">
+                                <li>Je - I</li>
+                                <li>Tu - you (singular, informal)</li>
+                                <li>Il/Elle - he/she</li>
+                                <li>Nous - we</li>
+                                <li>Vous - you (plural or formal)</li>
+                                <li>Ils/Elles - they (masculine/feminine)</li>
+                            </ul>
+                        </li>
+                        <li>Basic Verbs:
+                            <ul class="chapter-list">
+                                <li>Être - to be</li>
+                                <li>Avoir - to have</li>
+                                <li>Aller - to go</li>
+                                <li>Faire - to do/make</li>
+                                <li>Parler - to speak</li>
+                                <li>Manger - to eat</li>
+                                <li>Boire - to drink</li>
+                                <li>Prendre - to take</li>
+                                <li>Donner - to give</li>
+                                <li>Regarder - to watch/look at</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="chapter-item">
+                    <h4>Basic French Sentences</h4>
+                    <img src="https://study.com/cimages/videopreview/atotoz2c2u.jpg" alt="Sentences Image" height="350px" width="450px">
+                    <ul class="chapter-list">
+                        <li>Je suis heureux. - I am happy.</li>
+                        <li>Tu parles français. - You speak French.</li>
+                        <li>Il/Elle va à l'école. - He/She goes to school.</li>
+                        <li>Nous avons un chien. - We have a dog.</li>
+                        <li>Vous mangez du pain. - You (plural/formal) eat bread.</li>
+                        <li>Ils/Elles sont amis. - They are friends.</li>
+                    </ul>
+                </div>
+
+                <div class="chapter-item">
+                    <h4>Advanced French Sentences</h4>
+                    <ul class="chapter-list">
+                        <li>Je vais au cinéma avec mes amis. - I am going to the movies with my friends.</li>
+                        <li>Elle parle couramment cinq langues. - She speaks fluently five languages.</li>
+                        <li>Nous avons visité Paris l'année dernière. - We visited Paris last year.</li>
+                        <li>Vous avez besoin d'aide ? - Do you need help?</li>
+                        <li>Ils ont acheté une maison en bord de mer. - They bought a house by the sea.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <ul class="pagination justify-content-center">
+            <li class="page-item">
+                <a href="l3.html" class="page-link">&laquo;</a>
+            </li>
+            <li class="page-item">
+                <a href="l1.html" class="page-link">1</a>
+            </li>
+            <li class="page-item">
+                <a href="l2.html" class="page-link">2</a>
+            </li>
+            <li class="page-item">
+                <a href="l3.html" class="page-link">3</a>
+            </li>
+            <li class="page-item">
+                <a href="l1.html" class="page-link">&raquo;</a>
+            </li>
+        </ul>
+    </body>
+    </html>

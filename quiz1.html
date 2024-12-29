@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>French Learning Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #53b151; /* Green background color */
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #f8f8f8; /* White background color */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adding a shadow effect */
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 0;
+        }
+
+        h2 {
+            margin-top: 30px;
+        }
+
+        p {
+            margin-top: 10px;
+        }
+
+        input[type="radio"] {
+            margin-bottom: 10px;
+        }
+
+        input[type="button"] {
+            display: block;
+            margin: 20px auto 0;
+            padding: 10px 20px;
+            background-color: #4CAF50; 
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="button"]:hover {
+            background-color: #45a049; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid" style="color:white; font-size: 50px; font-weight: bolder;">       
+        <img src="https://cdn.jim-nielsen.com/ios/512/duolingo-2019-01-02.png" alt="" width="50px" height="50px">
+        Lingo</div>
+    <div class="container">
+        <h1>Welcome to the French Learning Quiz</h1>
+        <form>
+            <h2>Question 1:</h2>
+            <p>What is the French word for "to do/make"?</p>
+            <input type="radio" id="a" name="q1" value="a">Parler<br>
+            <input type="radio" id="b" name="q1" value="b">Faire<br>
+            <input type="radio" id="c" name="q1" value="c">Donner<br>
+
+            <h2>Question 2:</h2>
+            <p>What is the English of "Elle parle couramment cinq langues"?</p>
+            <input type="radio" id="d" name="q2" value="a">She speaks fluently five languages<br>
+            <input type="radio" id="e" name="q2" value="b">I am going to the movies with my friends<br>
+            <input type="radio" id="f" name="q2" value="c">You speak French<br>
+
+            <h2>Question 3:</h2>
+            <p>English of following audio</p>
+            <audio controls class="audio"><source src="audio/vous.mp3" type="audio/mpeg"></audio><br>
+            <input type="radio" id="g" name="q3" value="a">they (masculine/feminine)<br>
+            <input type="radio" id="h" name="q3" value="b">you (singular, informal)<br>
+            <input type="radio" id="i" name="q3" value="c">you (plural or formal)<br>
+
+            <h2>Question 4:</h2>
+            <p>What is "The chair" in French?</p>
+            <input type="radio" id="j" name="q4" value="a">La voiture<br>
+            <input type="radio" id="k" name="q4" value="b">La chaise<br>
+            <input type="radio" id="l" name="q4" value="c">Le stylo<br>
+
+            <h2>Question 5:</h2>
+            <p>What is "Enchanté"?</p>
+            <input type="radio" id="m" name="q5" value="a">Welcome<br>
+            <input type="radio" id="n" name="q5" value="b">Have a good day<br>
+            <input type="radio" id="o" name="q5" value="c">Nice to meet you<br>
+
+            <h2>Question 6:</h2>
+            <p>Translate "Ils ont acheté une maison en bord de mer"</p>
+            <input type="radio" id="p" name="q6" value="a">They bought a house by the sea.<br>
+            <input type="radio" id="q" name="q6" value="b">We visited Paris last year<br>
+            <input type="radio" id="r" name="q6" value="c">I am going to the movies with my friends<br>
+
+            <h2>Question 7:</h2>
+            <p>"Bird" in French</p>
+            <input type="radio" id="s" name="q7" value="a">Poisson<br>
+            <input type="radio" id="t" name="q7" value="b">Oiseau<br>
+            <input type="radio" id="u" name="q7" value="c">Souris<br>
+
+            <input type="button" value="Submit" onclick="submitQuiz()">
+        </form>
+    </div>
+
+    <script>
+        function submitQuiz() {
+            var score = 0;
+
+            var sq1=document.querySelector('input[name="q1"]:checked');
+            if (sq1 && sq1.value == "b") {
+                score++;
+            }
+
+            var sq2= document.querySelector('input[name="q2"]:checked');
+            if (sq2&& sq2.value== "a") {
+                score++;
+            }
+
+            var sq3= document.querySelector('input[name="q3"]:checked');
+            if (sq3&& sq3.value== "c") {
+                score++;
+            }
+
+            var sq4= document.querySelector('input[name="q4"]:checked');
+            if (sq4&& sq4.value== "b") {
+                score++;
+            }
+
+            var sq5= document.querySelector('input[name="q5"]:checked');
+            if (sq5&& sq5.value== "c") {
+                score++;
+            }
+
+            var sq6= document.querySelector('input[name="q6"]:checked');
+            if (sq6&& sq6.value== "a") {
+                score++;
+            }
+
+            var sq7= document.querySelector('input[name="q7"]:checked');
+            if (sq7&& sq7.value== "b") {
+                score++;
+            }
+
+            alert("Your score: " + score + "/7");
+        }
+    </script>
+</body>
+</html>

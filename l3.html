@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Verdana, Geneva, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .lingo-container, .chapter-container {
+            border-radius: 10px;
+            background-color: white;
+            color: #333;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding:20px;
+        }
+        .lingo-container {
+            background-color: #53b151;
+            color: white;
+            padding: 20px;
+            overflow: hidden;
+        }
+        .lingo-title {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 0;
+        }
+        .lingo-image {
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        .chapter-title {
+            text-align: center;
+            margin-bottom: 20px;
+            text-decoration: none;
+        }
+        .chapter-list {
+            padding-left: 20px;
+            list-style: none;
+        }
+        .chapter-list li {
+            margin-bottom: 10px;
+            position: relative;
+        }
+        .chapter-list li::before {
+            content: "\2022"; 
+            color: #53b151; 
+            font-size: 1.5rem; 
+            position: absolute;
+            left: -20px; 
+        }
+        .chapter-item img {
+            float: right;
+            border-radius: 20px;
+            margin-left: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .pagination {
+            justify-content: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="lingo-container">
+            <img class="lingo-image" src="https://cdn.jim-nielsen.com/ios/512/duolingo-2019-01-02.png" alt="">
+            <h1 class="lingo-title">Lingo</h1>
+        </div>
+        <div class="chapter-container">
+            <h1 class="chapter-title">Chapter 3</h1>
+            <div class="chapter-item">
+                <h4>Basic French Grammar</h4>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiOTxbWcuOgyuF4_4Nz8UYJ5Ykz2opJjN6NQ&usqp=CAU" width="300px" height="200px" alt="">
+                <ul >
+                    <li>Subject Pronouns:
+                        <ul class="chapter-list">
+                            <li>Je - <audio controls class="audio"><source src="audio/je.mp3" type="audio/mpeg"> </audio> I</li>
+                            <li>Tu - <audio controls class="audio"><source src="audio/tu.mp3" type="audio/mpeg"> </audio> you (singular, informal)</li>
+                            <li>Il/Elle - <audio controls class="audio"><source src="audio/il_elle.mp3" type="audio/mpeg"></audio> he/she</li>
+                            <li>Nous - <audio controls class="audio"><source src="audio/nous.mp3" type="audio/mpeg"> </audio> we</li>
+                            <li>Vous - <audio controls class="audio"><source src="audio/vous.mp3" type="audio/mpeg"> </audio> you (plural or formal)</li>
+                            <li>Ils/Elles - <audio controls class="audio"><source src="audio/ils_elles.mp3" type="audio/mpeg"> </audio> they (masculine/feminine)</li>
+                        </ul>
+                    </li>
+                    <li>Basic Verbs:
+                        <ul class="chapter-list">
+                            <li>Être - <audio controls class="audio"><source src="audio/etre.mp3" type="audio/mpeg"> </audio> to be</li>
+                            <li>Avoir - <audio controls class="audio"><source src="audio/avoir.mp3" type="audio/mpeg"> </audio> to have</li>
+                            <li>Aller - <audio controls class="audio"><source src="audio/aller.mp3" type="audio/mpeg"></audio> to go</li>
+                            <li>Faire - <audio controls class="audio"><source src="audio/faire.mp3" type="audio/mpeg"></audio> to do/make</li>
+                            <li>Parler - <audio controls class="audio"><source src="audio/parler.mp3" type="audio/mpeg"> </audio> to speak</li>
+                            <li>Manger - <audio controls class="audio"><source src="audio/manger.mp3" type="audio/mpeg"> </audio> to eat</li>
+                            <li>Boire - <audio controls class="audio"><source src="audio/boire.mp3" type="audio/mpeg"> </audio> to drink</li>
+                            <li>Prendre - <audio controls class="audio"><source src="audio/prendre.mp3" type="audio/mpeg"> </audio> to take</li>
+                            <li>Donner - <audio controls class="audio"><source src="audio/donner.mp3" type="audio/mpeg"> </audio> to give</li>
+                            <li>Regarder - <audio controls class="audio"><source src="audio/regarder.mp3" type="audio/mpeg"> </audio> to watch/look at</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="chapter-item">
+                <h4>Basic French Sentences</h4>
+                <img src="https://img.freepik.com/free-vector/wild-animal-group-white-background_1308-112351.jpg" width="300px" height="200px" alt="">
+                <ul class="chapter-list">
+                    <li>Je suis heureux. - <audio controls class="audio"><source src="audio/je_suis_heureux.mp3" type="audio/mpeg"> </audio> I am happy.</li>
+                    <li>Tu parles français. - <audio controls class="audio"><source src="audio/tu_parles_francais.mp3" type="audio/mpeg"> </audio> You speak French.</li>
+                    <li>Il/Elle va à l'école. - <audio controls class="audio"><source src="audio/il_elle_va_a_lecole.mp3" type="audio/mpeg"> </audio> He/She goes to school.</li>
+                    <li>Nous avons un chien. - <audio controls class="audio"><source src="audio/nous_avons_un_chien.mp3" type="audio/mpeg"> </audio> We have a dog.</li>
+                    <li>Vous mangez du pain. - <audio controls class="audio"><source src="audio/vous_mangez_du_pain.mp3" type="audio/mpeg"> </audio> You (plural/formal) eat bread.</li>
+                    <li>Ils/Elles sont amis. - <audio controls class="audio"><source src="audio/ils_elles_sont_amis.mp3" type="audio/mpeg"> </audio> They are friends.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <ul class="pagination justify-content-center">
+        <li class="page-item">
+            <a href="l3.html" class="page-link">&laquo;</a>
+        </li>
+        <li class="page-item">
+            <a href="l1.html" class="page-link">1</a>
+        </li>
+        <li class="page-item">
+            <a href="l2.html" class="page-link">2</a>
+        </li>
+        <li class="page-item">
+            <a href="l3.html" class="page-link">3</a>
+        </li>
+        <li class="page-item">
+            <a href="l1.html" class="page-link">&raquo;</a>
+        </li>
+    </ul>
+</body>
+</html>
